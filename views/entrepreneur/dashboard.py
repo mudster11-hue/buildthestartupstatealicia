@@ -34,10 +34,10 @@ def show_entrepreneur_dashboard(user: dict):
                 Utah · Build the Startup State
             </div>
             <h1 style="color:#fff; margin:0 0 .5rem; font-size:2rem; font-weight:800; letter-spacing:-0.02em;">
-                Welcome back, {user['name']}!
+                Great ideas make our state the best place to build. Let's get yours going.
             </h1>
             <p style="color:rgba(255,255,255,.7); margin:0; font-size:1rem; line-height:1.6;">
-                {'Your startup <strong style="color:rgba(255,255,255,.92);">' + name + '</strong> is ready to grow.' if profile else "Let's get your startup profile set up."}
+                {'Your startup <strong style="color:rgba(255,255,255,.92);">' + name + '</strong> is on the map.' if profile else "Let’s get your startup profile set up."} &nbsp;Browse 500+ grants, use the grant finder quiz to surface the best matches, and connect directly with Utah investors.
             </p>
         </div>
         """,
