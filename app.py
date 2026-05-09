@@ -5,13 +5,12 @@ Run with:  streamlit run app.py
 import sys
 from pathlib import Path
 
-# Make sure the project root is importable
 sys.path.insert(0, str(Path(__file__).parent))
 
 import streamlit as st
 import streamlit.components.v1 as components
 from config.settings import APP_ICON, APP_TITLE
-from modules.auth import clear_session, get_current_user
+from modules.auth import clear_session, get_current_user, login_as
 
 st.set_page_config(
     page_title=APP_TITLE,
@@ -28,44 +27,88 @@ def _apply_styles():
     st.markdown(
         """
         <style>
-        /* Sidebar dark navy */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        /* ── Sidebar ── */
         [data-testid="stSidebar"] > div:first-child {
-            background: #1B3A5C;
+            background: linear-gradient(180deg, #0F2540 0%, #1B3A5C 55%, #162F4A 100%);
+            border-right: 1px solid rgba(245,166,35,0.12);
         }
         [data-testid="stSidebar"] * { color: white !important; }
+
+        /* Gold accent line at the top of the sidebar */
+        [data-testid="stSidebar"] > div:first-child > div:first-child::before {
+            content: '';
+            display: block;
+            height: 3px;
+            background: linear-gradient(90deg, #F5A623 0%, #FFBC46 50%, transparent 100%);
+            margin-bottom: 0;
+            border-radius: 0 2px 2px 0;
+        }
+
         [data-testid="stSidebar"] .stButton > button {
-            background: rgba(255,255,255,.08);
-            border: 1px solid rgba(255,255,255,.2);
-            border-radius: 8px;
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.15);
+            border-radius: 9px;
             color: white !important;
             margin-bottom: 4px;
             text-align: left;
-            transition: background .15s;
+            transition: background .15s, border-color .15s;
+            font-weight: 500;
         }
         [data-testid="stSidebar"] .stButton > button:hover {
-            background: rgba(255,255,255,.18);
+            background: rgba(255,255,255,.14);
+            border-color: rgba(255,255,255,.25);
         }
         /* Active nav button */
         [data-testid="stSidebar"] .stButton > button[kind="primary"] {
             background: #F5A623 !important;
             border-color: #F5A623 !important;
-            color: #1B3A5C !important;
+            color: #0F2540 !important;
             font-weight: 700;
         }
-        /* Remove default top padding */
+
+        /* ── Main content ── */
         .block-container { padding-top: 1.5rem !important; }
-        /* Card helper class */
+
+        /* Subtle warm background tint on the main area */
+        [data-testid="stMain"], .main {
+            background: #F8F9FB !important;
+        }
+
+        /* Cards */
         .hub-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 20px 24px;
-            border: 1px solid #E9ECEF;
-            box-shadow: 0 2px 8px rgba(0,0,0,.05);
+            border: 1px solid #EAECEF;
+            box-shadow: 0 2px 12px rgba(27,58,92,.06);
             margin-bottom: 12px;
         }
+
+        /* Primary buttons outside sidebar */
+        .stButton > button[kind="primary"] {
+            background: #F5A623 !important;
+            border-color: #F5A623 !important;
+            color: #1B3A5C !important;
+            font-weight: 700 !important;
+            border-radius: 10px !important;
+            transition: background .15s, box-shadow .15s !important;
+        }
+        .stButton > button[kind="primary"]:hover {
+            background: #F7B540 !important;
+            box-shadow: 0 4px 16px rgba(245,166,35,.35) !important;
+        }
+
+        /* Secondary buttons outside sidebar */
+        .stButton > button[kind="secondary"] {
+            border-radius: 10px !important;
+            font-weight: 500 !important;
+        }
+
         /* Hide Streamlit branding */
         #MainMenu { visibility: hidden; }
-        footer { visibility: hidden; }
+        footer     { visibility: hidden; }
         </style>
         """,
         unsafe_allow_html=True,
@@ -76,7 +119,13 @@ def _apply_styles():
 
 def _render_sidebar(user: dict) -> str:
     with st.sidebar:
-        st.markdown("### 🚀 Build the Startup State.")
+        st.markdown(
+            "<div style='padding:4px 0 12px;'>"
+            "<div style='font-size:1.15rem;font-weight:800;letter-spacing:-0.01em;'>Build the Startup State.</div>"
+            "<div style='font-size:0.72rem;color:rgba(255,255,255,0.45)!important;letter-spacing:0.1em;text-transform:uppercase;margin-top:2px;'>Utah · Demo</div>"
+            "</div>",
+            unsafe_allow_html=True,
+        )
         st.markdown("---")
         st.markdown(f"**{user['name']}**")
         st.caption(user["role"].title())
@@ -150,6 +199,15 @@ def _route_investor(page: str, user: dict):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    # Handle URL-based role selection set by the landing page iframe
+    params = st.query_params
+    if "role" in params and st.session_state.get("user") is None:
+        role = params.get("role", "")
+        if role in ("entrepreneur", "investor"):
+            login_as(role)
+            st.query_params.clear()
+            st.rerun()
+
     _apply_styles()
 
     user = get_current_user()

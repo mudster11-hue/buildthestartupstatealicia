@@ -14,13 +14,30 @@ def show_entrepreneur_dashboard(user: dict):
     # ── Welcome banner ────────────────────────────────────────────────────────
     st.markdown(
         f"""
-        <div style="background:linear-gradient(135deg,#1B3A5C,#2E5C8E);
-                    border-radius:16px; padding:32px 36px; margin-bottom:1.5rem;">
-            <h1 style="color:#fff; margin:0 0 .4rem; font-size:2rem;">
-                Welcome back, {user['name']}! 👋
+        <div style="
+            background: linear-gradient(135deg, #0F2540 0%, #1B3A5C 50%, #1E4A78 100%);
+            border-radius: 18px;
+            padding: 36px 40px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(245,166,35,0.18);
+            box-shadow: 0 8px 32px rgba(15,37,64,0.18);
+            position: relative;
+            overflow: hidden;
+        ">
+            <div style="
+                position:absolute; top:0; left:0; right:0; height:3px;
+                background: linear-gradient(90deg, #F5A623, #FFBC46, transparent);
+                border-radius: 18px 18px 0 0;
+            "></div>
+            <div style="font-size:0.72rem;color:rgba(245,166,35,0.8);font-weight:700;
+                        letter-spacing:0.16em;text-transform:uppercase;margin-bottom:10px;">
+                Utah · Build the Startup State
+            </div>
+            <h1 style="color:#fff; margin:0 0 .5rem; font-size:2rem; font-weight:800; letter-spacing:-0.02em;">
+                Welcome back, {user['name']}!
             </h1>
-            <p style="color:rgba(255,255,255,.8); margin:0; font-size:1.05rem;">
-                {'Your startup <strong>' + name + '</strong> is ready to grow.' if profile else 'Let\'s get your startup profile set up.'}
+            <p style="color:rgba(255,255,255,.7); margin:0; font-size:1rem; line-height:1.6;">
+                {'Your startup <strong style="color:rgba(255,255,255,.92);">' + name + '</strong> is ready to grow.' if profile else "Let's get your startup profile set up."}
             </p>
         </div>
         """,
