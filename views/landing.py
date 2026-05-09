@@ -153,15 +153,17 @@ h1 {{
     color:rgba(255,255,255,.32); text-align:center; margin-bottom:20px;
 }}
 .btn {{
-    display:block; width:100%; padding:15px 22px; border-radius:13px; border:none;
-    font-size:15px; font-weight:600; cursor:pointer; font-family:inherit;
-    letter-spacing:.01em; margin-bottom:10px;
+    display:block; width:100%; padding:16px 22px 14px; border-radius:13px; border:none;
+    cursor:pointer; font-family:inherit; text-align:left; margin-bottom:10px;
     transition:transform .14s ease, box-shadow .14s ease, background .14s ease;
 }}
 .btn:last-of-type {{ margin-bottom:0; }}
 .btn:active {{ transform:scale(.98)!important; }}
+.btn-title {{ font-size:15px; font-weight:700; letter-spacing:.01em; display:block; margin-bottom:3px; }}
+.btn-sub {{ font-size:11.5px; font-weight:400; opacity:.75; display:block; line-height:1.4; }}
 .btn-e {{ background:#F5A623; color:#1B3A5C; box-shadow:0 4px 20px rgba(245,166,35,.3); }}
 .btn-e:hover {{ transform:translateY(-2px); box-shadow:0 8px 30px rgba(245,166,35,.5); background:#F7B540; }}
+.btn-e .btn-sub {{ opacity:.65; }}
 .btn-i {{ background:rgba(255,255,255,.08); color:rgba(255,255,255,.88); border:1px solid rgba(255,255,255,.15); }}
 .btn-i:hover {{ transform:translateY(-2px); background:rgba(255,255,255,.15); }}
 .demo-note {{ margin-top:18px; text-align:center; font-size:11px; color:rgba(255,255,255,.22); letter-spacing:.05em; }}
@@ -201,9 +203,15 @@ h1 {{
     <p class="sub">Utah's platform connecting founders with funding<br>and investors with the next great company.</p>
 
     <div class="card">
-        <div class="card-label">Choose your role to enter</div>
-        <button class="btn btn-e" onclick="enter('entrepreneur')">💼 &nbsp; I'm an Entrepreneur</button>
-        <button class="btn btn-i" onclick="enter('investor')">📊 &nbsp; I'm an Investor</button>
+        <div class="card-label">I am a...</div>
+        <button class="btn btn-e" onclick="enter('entrepreneur')">
+            <span class="btn-title">💼 &nbsp; Entrepreneur</span>
+            <span class="btn-sub">Utah is the best state to build — let's find your funding.</span>
+        </button>
+        <button class="btn btn-i" onclick="enter('investor')">
+            <span class="btn-title">📊 &nbsp; Investor</span>
+            <span class="btn-sub">Utah's next breakout startup is already here. Come find it.</span>
+        </button>
         <div class="demo-note">Demo mode &nbsp;·&nbsp; No account needed</div>
     </div>
 
