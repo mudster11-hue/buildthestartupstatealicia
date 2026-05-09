@@ -204,14 +204,8 @@ h1 {{
 
     <div class="card">
         <div class="card-label">I am a...</div>
-        <button class="btn btn-e" onclick="enter('entrepreneur')">
-            <span class="btn-title">💼 &nbsp; Entrepreneur</span>
-            <span class="btn-sub">Utah is the best state to build — let's find your funding.</span>
-        </button>
-        <button class="btn btn-i" onclick="enter('investor')">
-            <span class="btn-title">📊 &nbsp; Investor</span>
-            <span class="btn-sub">Utah's next breakout startup is already here. Come find it.</span>
-        </button>
+        <button class="btn btn-e" onclick="enter('entrepreneur')">💼 &nbsp; Entrepreneur</button>
+        <button class="btn btn-i" onclick="enter('investor')">📊 &nbsp; Investor</button>
         <div class="demo-note">Demo mode &nbsp;·&nbsp; No account needed</div>
     </div>
 
