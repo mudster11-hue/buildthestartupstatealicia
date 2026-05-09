@@ -1,0 +1,770 @@
+{
+  "815 West 1250 South, Orem, UT": {
+    "lat": 40.27367100598,
+    "lon": -111.715409993993
+  },
+  "1557 West Innovation Way, Lehi, UT": {
+    "lat": 40.430811406314,
+    "lon": -111.874195175187
+  },
+  "215 South State Street, Salt Lake City, UT": {
+    "lat": 40.764741651139,
+    "lon": -111.887919284351
+  },
+  "1637 East Harrison Avenue, Salt Lake City, UT": {
+    "lat": 40.739735835576,
+    "lon": -111.843820583003
+  },
+  "2901 West Bluegrass Boulevard, Lehi, UT": {
+    "lat": 40.435046446712,
+    "lon": -111.89608191694
+  },
+  "2000 Ashton Boulevard, Lehi, UT": {
+    "lat": 40.421144766929,
+    "lon": -111.882975889315
+  },
+  "Salt Lake City, UT": {
+    "lat": 40.758478,
+    "lon": -111.888142
+  },
+  "1633 West Innovation Way, Lehi, UT": {
+    "lat": 40.430727880649,
+    "lon": -111.876291656809
+  },
+  "1445 Settlement Drive, Park City, UT": {
+    "lat": 40.694354325856,
+    "lon": -111.539537632623
+  },
+  "26 Rio Grand Street, Salt Lake City, UT": {
+    "lat": 40.767987124048,
+    "lon": -111.904471447647
+  },
+  "1171 West 2400 South, West Valley City, UT": {
+    "lat": 40.71886485476,
+    "lon": -111.926333630423
+  },
+  "139 Hunter's Grove Lane, Lehi, UT": {
+    "lat": 40.390813341546,
+    "lon": -111.827656166548
+  },
+  "1355 South 960 East, Heber City, UT": {
+    "lat": 40.490872478341,
+    "lon": -111.398041886929
+  },
+  "350 East 400 South, Salt Lake City, UT": {
+    "lat": 40.760409003478,
+    "lon": -111.881027348284
+  },
+  "18 West 1900 South, Kaysville, UT": {
+    "lat": 41.004078388682,
+    "lon": -111.937998138339
+  },
+  "13894 South Bangerter Parkway, Draper, UT": {
+    "lat": 40.498908879468,
+    "lon": -111.88570755156
+  },
+  "26 South Rio Grande Street, Salt Lake City, UT": {
+    "lat": 40.767987124048,
+    "lon": -111.904471447647
+  },
+  "1053 Blackstone Drive, Fruit Heights, UT": {
+    "lat": 41.017257255044,
+    "lon": -111.910121185663
+  },
+  "3400 North Ashton Boulevard, Lehi, UT": {
+    "lat": 40.429615308731,
+    "lon": -111.894145864944
+  },
+  "181 E Edith Ave, Salt Lake City, Utah, 84111": {
+    "lat": 40.743074682887,
+    "lon": -111.885575033671
+  },
+  "276 East 12200 South, Draper, UT": {
+    "lat": 40.528265740968,
+    "lon": -111.882460653727
+  },
+  "2223 South Highland Drive, Salt Lake City, UT": {
+    "lat": 40.722524854691,
+    "lon": -111.858109883898
+  },
+  "48 South Rio Grande Street, Salt Lake City, UT": {
+    "lat": 40.767876063831,
+    "lon": -111.904472788751
+  },
+  "1920 Blaine Avenue, Salt Lake City, UT": {
+    "lat": 40.732736108234,
+    "lon": -111.835861630661
+  },
+  "1555 Freedom Boulevard, Provo, UT": {
+    "lat": 40.255012428507,
+    "lon": -111.662300411455
+  },
+  "12101 State Street, Draper, UT": {
+    "lat": 40.531565654339,
+    "lon": -111.887406144239
+  },
+  "815 South East Mountain Circle, Alpine, UT": {
+    "lat": 40.441598538515,
+    "lon": -111.758597833923
+  },
+  "800 West University Parkway, Orem, UT": {
+    "lat": 40.277115339542,
+    "lon": -111.712776316196
+  },
+  "630 South Komas Drive, Salt Lake City, UT": {
+    "lat": 40.753373736866,
+    "lon": -111.820628946564
+  },
+  "250 E 200 S, Salt Lake City UT 84111": {
+    "lat": 40.764721869847,
+    "lon": -111.884409613854
+  },
+  "272 North 100 East, American Fork, UT": {
+    "lat": 40.382482442252,
+    "lon": -111.795522631982
+  },
+  "2750 Rassmussen Road, Park City, UT": {
+    "lat": 40.748146321042,
+    "lon": -111.562843514403
+  },
+  "Midvale, UT": {
+    "lat": 40.6107954,
+    "lon": -111.9080408
+  },
+  "4692 N 300 W, Orem, Utah, 84604": {
+    "lat": 40.296172518421,
+    "lon": -111.66237006507
+  },
+  "2376 East 3395 South, Salt Lake City, UT": {
+    "lat": 40.697507975016,
+    "lon": -111.822006847627
+  },
+  "1441 Perry Avenue, Salt Lake City, UT": {
+    "lat": 40.771139851199,
+    "lon": -111.849662350421
+  },
+  "299 South Main Street, Salt Lake City, UT": {
+    "lat": 40.763748269884,
+    "lon": -111.890765191936
+  },
+  "Salt Lake City": {
+    "lat": 40.758478,
+    "lon": -111.888142
+  },
+  "5526 West 13400 South, Herriman, UT": {
+    "lat": 40.50912457542,
+    "lon": -112.022764660429
+  },
+  "1090 Center Drive, Park City, UT": {
+    "lat": 40.719410684295,
+    "lon": -111.539199003735
+  },
+  "3450 Triumph Boulevard, Lehi, UT": {
+    "lat": 40.430813837066,
+    "lon": -111.879467057008
+  },
+  "1123 North 1430 West, Orem, UT": {
+    "lat": 40.31785876505,
+    "lon": -111.730683162683
+  },
+  "826 South Carterville Road, Orem, UT": {
+    "lat": 40.281818467324,
+    "lon": -111.671556128036
+  },
+  "560 South 100 West, Provo, UT": {
+    "lat": 40.226239408472,
+    "lon": -111.66089929252
+  },
+  "5442 South 900 East, Salt Lake City, UT": {
+    "lat": 40.652423478035,
+    "lon": -111.867485377876
+  },
+  "2701 North Thanksgiving Way, Lehi, UT": {
+    "lat": 40.420944062258,
+    "lon": -111.8817461803
+  },
+  "341 South Main Street Floor, Salt Lake City, UT": {
+    "lat": 40.761828311142,
+    "lon": -111.89081078949
+  },
+  "374 South 671 West, Pleasant Grove, UT": {
+    "lat": 40.359282046724,
+    "lon": -111.750523881871
+  },
+  "155 North 400 West, Salt Lake City, UT": {
+    "lat": 40.771780773425,
+    "lon": -111.903146436393
+  },
+  "2961 Maple Loop Drive, Lehi, UT": {
+    "lat": 40.431602490336,
+    "lon": -111.896823966828
+  },
+  "67 W 13490, Draper, UT 84020": {
+    "lat": 40.505366591041,
+    "lon": -111.893137354354
+  },
+  "1944 East Ashley Mesa Lane, Sandy, UT": {
+    "lat": 40.563171129005,
+    "lon": -111.83566700287
+  },
+  "879 Baxter Drive, South Jordan, UT": {
+    "lat": 40.560206407942,
+    "lon": -111.914573149716
+  },
+  "1850 W Ashton Blvd, Lehi, UT 84043": {
+    "lat": 40.419420693265,
+    "lon": -111.880935314987
+  },
+  "2845 East 3365 South, Salt Lake City, UT": {
+    "lat": 40.698413052921,
+    "lon": -111.811382869171
+  },
+  "419 East Coatsville Avenue, Salt Lake City, UT": {
+    "lat": 40.731619177727,
+    "lon": -111.878980068434
+  },
+  "3317 North Cottonwood Lane, Provo, UT": {
+    "lat": 40.277455141897,
+    "lon": -111.665498023697
+  },
+  "332 East 3300 South, Salt Lake City, UT": {
+    "lat": 40.699513093894,
+    "lon": -111.881468823124
+  },
+  "13 West Wasatch Street, Midvale, UT": {
+    "lat": 40.60547991684,
+    "lon": -111.891959864596
+  },
+  "6300 North Sagewood Drive, Park City, UT": {
+    "lat": 40.723116491327,
+    "lon": -111.543878871735
+  },
+  "3535 South Market Street, West valley city, UT": {
+    "lat": 40.695585669342,
+    "lon": -111.959984792378
+  },
+  "2801 N Thanksgiving Way, Lehi, UT 84043": {
+    "lat": 40.422377661067,
+    "lon": -111.8833598643
+  },
+  "Legal 150 South State Street, Salt Lake City, UT": {
+    "lat": 40.765886032379,
+    "lon": -111.888538287901
+  },
+  "8 East Broadway, Salt Lake City, UT": {
+    "lat": 40.76263879927,
+    "lon": -111.890577772581
+  },
+  "15 West Scenic Point Drive, Draper, UT": {
+    "lat": 40.480670235344,
+    "lon": -111.891646800512
+  },
+  "1389 Center Drive, Park City, UT": {
+    "lat": 40.723288655618,
+    "lon": -111.538050263905
+  },
+  "8911 South Sandy Parkway, Sandy, UT": {
+    "lat": 40.589639377124,
+    "lon": -111.903840877071
+  },
+  "2701 North Thanksgiving Way 100, Lehi, UT": {
+    "lat": 40.420944062258,
+    "lon": -111.8817461803
+  },
+  "75 West University Parkway, Orem, UT": {
+    "lat": 40.273396420022,
+    "lon": -111.697289200593
+  },
+  "1555 North Freedom Boulevard 200 West, Provo, UT": {
+    "lat": 40.255012428507,
+    "lon": -111.662300411455
+  },
+  "1300 West 11400 Street, South Jordan, UT": {
+    "lat": 40.544213895187,
+    "lon": -111.929589604742
+  },
+  "2749 East Parleys Way, Salt Lake City, UT": {
+    "lat": 40.717986934221,
+    "lon": -111.810877608047
+  },
+  "893 Baxter Drive, South Jordan, UT": {
+    "lat": 40.559992040768,
+    "lon": -111.91497011665
+  },
+  "920 W 14600 S Suite 600, Bluffdale, UT 84065": {
+    "lat": 40.489106704709,
+    "lon": -111.917301710657
+  },
+  "2570 Rasmussen Road, Park City, UT": {
+    "lat": 40.74262558628,
+    "lon": -111.559881056346
+  },
+  "180 East 2100 South, Salt Lake City, UT": {
+    "lat": 40.725227222184,
+    "lon": -111.885754993132
+  },
+  "650 South 500 West, Salt Lake City, UT": {
+    "lat": 40.755135864371,
+    "lon": -111.905691349835
+  },
+  "10011 South Centennial Parkway, Sandy, UT": {
+    "lat": 40.5692589891,
+    "lon": -111.894530175205
+  },
+  "629 East Quality Drive, American Fork, UT": {
+    "lat": 40.362477773038,
+    "lon": -111.781447656351
+  },
+  "1441 W Innovation Way, Lehi, UT 84043-4677": {
+    "lat": 40.431008171491,
+    "lon": -111.872101040497
+  },
+  "6300 Sagewood Drive, Park City, UT": {
+    "lat": 40.723116491327,
+    "lon": -111.543878871735
+  },
+  "2319 South Foothill Drive, Salt Lake City, UT": {
+    "lat": 40.721163340249,
+    "lon": -111.810941059054
+  },
+  "3300 Triumph Boulevard, Lehi, UT": {
+    "lat": 40.424573154437,
+    "lon": -111.881687045768
+  },
+  "412 West Rivers Edge Drive, Provo, UT": {
+    "lat": 40.264991251875,
+    "lon": -111.66690274685
+  },
+  "12537 South Brundisi Way, Herriman, UT": {
+    "lat": 40.523618394753,
+    "lon": -112.022849066194
+  },
+  "898 North 1200 West, Orem, UT": {
+    "lat": 40.313715296944,
+    "lon": -111.72296242403
+  },
+  "1083 Terrace Drive, Provo, UT": {
+    "lat": 40.248247142997,
+    "lon": -111.629912989042
+  },
+  "321 West 1300 South, Heber City, UT": {
+    "lat": 40.491108806101,
+    "lon": -111.419457230447
+  },
+  "344 West 13800 South, Draper, UT": {
+    "lat": 40.503367507133,
+    "lon": -111.901693517296
+  },
+  "90 South 400 West, Salt Lake City, UT": {
+    "lat": 40.768492175624,
+    "lon": -111.902833623766
+  },
+  "11779 Pennbrooke Lane, Highland, UT": {
+    "lat": 40.44590830358,
+    "lon": -111.798860138189
+  },
+  "1064 South North County Boulevard, Pleasant Grove, UT": {
+    "lat": 40.350929899305,
+    "lon": -111.760806130134
+  },
+  "15 W South Temple, Salt Lake City, UT": {
+    "lat": 40.769149274923,
+    "lon": -111.891754927063
+  },
+  "74 Main Street, Salt Lake City, UT": {
+    "lat": 40.767439995318,
+    "lon": -111.891616038928
+  },
+  "593 E 12300 S Ste B Draper, UT, 84020": {
+    "lat": 40.527049065813,
+    "lon": -111.875594953017
+  },
+  "489 South Jordan Parkway, South Jordan, UT": {
+    "lat": 40.558376973755,
+    "lon": -111.904367344409
+  },
+  "2100 Pleasant Grove, Boulevard, Pleasant Grove, UT": {
+    "lat": 40.352153154254,
+    "lon": -111.768254037839
+  },
+  "1441 West Innovation Way, Lehi, UT": {
+    "lat": 40.431008171491,
+    "lon": -111.872101040497
+  },
+  "3049 Executive Parkway, Lehi, UT": {
+    "lat": 40.428225714913,
+    "lon": -111.898501856205
+  },
+  "3500 Mountain Vista Parkway, Provo, UT": {
+    "lat": 40.191358872778,
+    "lon": -111.621240401464
+  },
+  "735 Auto Mall Drive, American Fork, UT": {
+    "lat": 40.362381716428,
+    "lon": -111.79039709819
+  },
+  "2890 East Cottonwood Parkway, Cottonwood Heights, UT": {
+    "lat": 40.632746708874,
+    "lon": -111.810163553716
+  },
+  "3715 Tracy Hall Parkway, Provo, UT": {
+    "lat": 40.189559152438,
+    "lon": -111.619958305554
+  },
+  "6905 South 1300 East, Cottonwood Heights, UT": {
+    "lat": 40.625233506144,
+    "lon": -111.853807955912
+  },
+  "6440 Millrock Drive, Salt Lake City, UT": {
+    "lat": 40.633982997683,
+    "lon": -111.801770334971
+  },
+  "9561 S 700 E, Sandy, UT 84070": {
+    "lat": 40.577843315237,
+    "lon": -111.870678882986
+  },
+  "553 Timpanogos Cir Suite 2300, Orem, UT 84097": {
+    "lat": 40.323905900965,
+    "lon": -111.682064760059
+  },
+  "1200 Towne Centre Boulevard, Provo, UT": {
+    "lat": 40.217216750708,
+    "lon": -111.663035420544
+  },
+  "1850 Ashton Boulevard, Lehi, UT": {
+    "lat": 40.419420693265,
+    "lon": -111.880935314987
+  },
+  "2600 Executive Parkway, Lehi, UT": {
+    "lat": 40.427704444354,
+    "lon": -111.891822652841
+  },
+  "4001 South 700 East, Salt Lake City, UT": {
+    "lat": 40.684685632905,
+    "lon": -111.869867682396
+  },
+  "10421 South Jordan Gateway, South Jordan, UT": {
+    "lat": 40.562283150182,
+    "lon": -111.901528645261
+  },
+  "341 South Main Street, Salt Lake City, UT": {
+    "lat": 40.761828311142,
+    "lon": -111.89081078949
+  },
+  "1300 W Traverse Pkwy, Lehi, UT 84043": {
+    "lat": 40.435292832756,
+    "lon": -111.87204630667
+  },
+  "10808 South River Front Parkway, South Jordan, UT": {
+    "lat": 40.555610191336,
+    "lon": -111.9139547329
+  },
+  "5295 Commerce Drive, Murray, UT": {
+    "lat": 40.655665640093,
+    "lon": -111.899048859207
+  },
+  "1815 S State St, Orem, UT 84097": {
+    "lat": 40.263782204252,
+    "lon": -111.67751515828
+  },
+  "1850 West Ashton Boulevard, Lehi, UT": {
+    "lat": 40.419420693265,
+    "lon": -111.880935314987
+  },
+  "14761 Future Way, Draper, UT 84020": {
+    "lat": 40.483554615864,
+    "lon": -111.891872692803
+  },
+  "1800 Ashton Boulevard, Lehi, UT": {
+    "lat": 40.420738998996,
+    "lon": -111.881506960784
+  },
+  "9815 S Monroe Street, Sandy, UT 84070": {
+    "lat": 40.573459118872,
+    "lon": -111.898209495423
+  },
+  "3209 Daybreaker Drive, Park City, UT": {
+    "lat": 40.765004633351,
+    "lon": -111.572483792702
+  },
+  "10377 South Jordan Gateway, South Jordan, UT": {
+    "lat": 40.563241956086,
+    "lon": -111.901803487866
+  },
+  "645 South 200 East Salt Lake City, Utah 84111": {
+    "lat": 40.755086075866,
+    "lon": -111.884899703732
+  },
+  "559 South Deseret Drive, Kaysville, UT": {
+    "lat": 41.025869283372,
+    "lon": -111.948644496477
+  },
+  "855 West 2400 South, Salt Lake City, UT": {
+    "lat": 40.717815859578,
+    "lon": -111.915783328896
+  },
+  "310 South Main Street, Salt Lake City, UT": {
+    "lat": 40.76245611569,
+    "lon": -111.891542948732
+  },
+  "44 W 13800 S, Draper , UT 84020": {
+    "lat": 40.500739028998,
+    "lon": -111.893544553366
+  },
+  "650 Komas Drive, Salt Lake City, UT": {
+    "lat": 40.754725193025,
+    "lon": -111.829148145313
+  },
+  "2022 Tuscany Way, Pleasant Grove, UT": {
+    "lat": 40.385567569353,
+    "lon": -111.746723862247
+  },
+  "10355 S Jordan Gateway Suite 500, South Jordan, UT 84095": {
+    "lat": 40.56441638645,
+    "lon": -111.901661079331
+  },
+  "2100 Pleasant Grove Blvd #300, Pleasant Grove, UT 84062": {
+    "lat": 40.352153154254,
+    "lon": -111.768254037839
+  },
+  "N 3401 N Thanksgiving Way #500, Lehi, UT 84043": {
+    "lat": 40.429729176885,
+    "lon": -111.891954500178
+  },
+  "2600 Executive Pkwy Suite 550, Lehi, UT 84043": {
+    "lat": 40.427704444354,
+    "lon": -111.891822652841
+  },
+  "7533 Center View Ct, # 4134, West Jordan, Utah 84084": {
+    "lat": 40.614353209089,
+    "lon": -111.983672805123
+  },
+  "802 E 1050 S American Fork, Utah 84003 US": {
+    "lat": 40.35615815332,
+    "lon": -111.776670306817
+  },
+  "10355 S Jordan Gateway #300, South Jordan, UT 84095": {
+    "lat": 40.564416679817,
+    "lon": -111.901589162602
+  },
+  "3400 Ashton Blvd #160, Lehi, UT 84043": {
+    "lat": 40.429615308731,
+    "lon": -111.894145864944
+  },
+  "3585 e Ceres Dr, Salt Lake City, Utah 84124, US": {
+    "lat": 40.680873208065,
+    "lon": -111.793954545536
+  },
+  "550 West State Street, Lehi, UT 84043": {
+    "lat": 40.404881402107,
+    "lon": -111.858056491175
+  },
+  "6975 South Union Park Avenue, Cottonwood Heights, UT 84047": {
+    "lat": 40.624036067456,
+    "lon": -111.855918016218
+  },
+  "2080 W 400 N, Lindon, UT 84042": {
+    "lat": 40.346966223021,
+    "lon": -111.767610307675
+  },
+  "1260 Stringham Ave, Salt Lake City, UT 84106": {
+    "lat": 40.720538092181,
+    "lon": -111.855634288795
+  },
+  "1064 S N County Blvd Suite 300, Pleasant Grove, UT 84062": {
+    "lat": 40.350929899305,
+    "lon": -111.760806130134
+  },
+  "1633 W Innovation Way, Lehi, UT 84043": {
+    "lat": 40.430727880649,
+    "lon": -111.876291656809
+  },
+  "13907 S Minuteman Drive, Draper, UT 84020": {
+    "lat": 40.498923547798,
+    "lon": -111.889962792345
+  },
+  "12459 S 300 E Suite 102 , Draper UT 84020": {
+    "lat": 40.524583235627,
+    "lon": -111.88131342264
+  },
+  "1221 S Valley Grove Way #350, Pleasant Grove, UT 84062": {
+    "lat": 40.349736316292,
+    "lon": -111.761837188044
+  },
+  "9547 S 700 E STE 201 Sandy, UT 84070": {
+    "lat": 40.57784570408,
+    "lon": -111.870170185282
+  },
+  "4100 Chapel Ridge Road, Suite 500, Lehi, UT 84043": {
+    "lat": 40.3985413,
+    "lon": -111.8591366
+  },
+  "905 N Marshall Way, Suite C Layton, Utah 84041": {
+    "lat": 41.073371079319,
+    "lon": -111.997751720249
+  },
+  "3300 North Ashton Boulevard, Lehi, UT 84043, US": {
+    "lat": 40.428873719847,
+    "lon": -111.893105419303
+  },
+  "3400 Ashton Blvd Suite 450 Lehi, UT 84043": {
+    "lat": 40.429615308731,
+    "lon": -111.894145864944
+  },
+  "350 East 400 South,  Suite 316 Salt Lake City UT 84111": {
+    "lat": 40.760409003478,
+    "lon": -111.881027348284
+  },
+  "3401 N Thanksgiving Way # 190, Lehi, Utah 84043": {
+    "lat": 40.429729176885,
+    "lon": -111.891954500178
+  },
+  "1935 E. Vine Street, Ste. 110,  Salt Lake City, Utah 84121": {
+    "lat": 40.64081605088,
+    "lon": -111.837227210327
+  },
+  "1117 E Yard Row Saratoga Springs, UT 84045": {
+    "lat": 40.366012002512,
+    "lon": -111.889369018324
+  },
+  "3451 Triumph Blvd Suite 650, Lehi, UT 84043": {
+    "lat": 40.430424078568,
+    "lon": -111.881932174732
+  },
+  "14015 minuteman Dr Draper, UT 84020": {
+    "lat": 40.496609052874,
+    "lon": -111.890110062384
+  },
+  "2575 W 400 N Suite 100B, Lindon, UT 84042": {
+    "lat": 40.34355990139,
+    "lon": -111.768251858544
+  },
+  "3300 Triumph Blvd Suites 100 and 200, Lehi, UT 84043": {
+    "lat": 40.424573154437,
+    "lon": -111.881687045768
+  },
+  "1630 N 1770 E, Logan, Utah 84341": {
+    "lat": 41.760757044778,
+    "lon": -111.789981439612
+  },
+  "2600 Executive Pkwy, Lehi, UT 84043": {
+    "lat": 40.427704444354,
+    "lon": -111.891822652841
+  },
+  "975 S Tech Ridge Dr, St. George, UT 84770": {
+    "lat": 37.090354811908,
+    "lon": -113.591451250758
+  },
+  "432 S Tech Ridge Dr, St. George, UT 84770": {
+    "lat": 37.100975898607,
+    "lon": -113.593296191466
+  },
+  "412 W Rivers Edge Dr, Provo, UT 84604": {
+    "lat": 40.264991251875,
+    "lon": -111.66690274685
+  },
+  "786 divisions road, park city Utah 84098": {
+    "lat": 40.735186976723,
+    "lon": -111.495573209364
+  },
+  "139 Hunter\u00e2\u0080\u0099s Grove Ln STE 207 Lehi, UT 84043": {
+    "lat": 40.3985413,
+    "lon": -111.8591366
+  },
+  "2701 North Thanksgiving Way, Ste 100, Lehi, UT 84043": {
+    "lat": 40.420944062258,
+    "lon": -111.8817461803
+  },
+  "2500 Executive Pkwy, Lehi, UT 84043": {
+    "lat": 40.427719154594,
+    "lon": -111.890442740121
+  },
+  "2000 Ashton Blvd., #450, Lehi, UT 84043": {
+    "lat": 40.421144766929,
+    "lon": -111.882975889315
+  },
+  "St. George, UT": {
+    "lat": 37.1083011,
+    "lon": -113.5832378
+  },
+  "815 W 1250 S, Orem, UT 84058": {
+    "lat": 40.27367100598,
+    "lon": -111.715409993993
+  },
+  "1396 W 200 S Bldg 2 Unit E Lindon UT 84042": {
+    "lat": 40.333863506249,
+    "lon": -111.749024946126
+  },
+  "2701 N Thanksgiving Way #100, Lehi, UT 84043": {
+    "lat": 40.420944062258,
+    "lon": -111.8817461803
+  },
+  "815 W 1250 S, Suite 119, Orem, Utah 84058": {
+    "lat": 40.27367100598,
+    "lon": -111.715409993993
+  },
+  "155 N 400 W, Salt Lake City, UT 84101": {
+    "lat": 40.771780773425,
+    "lon": -111.903146436393
+  },
+  "705 Matterhorn dr. Park City, UT 84098": {
+    "lat": 40.737843620934,
+    "lon": -111.615891657591
+  },
+  "3300 N Ashton Blvd, Suite 175, Lehi, UT 84043": {
+    "lat": 40.428873719847,
+    "lon": -111.893105419303
+  },
+  "32 1800 W H, Lindon, UT 84042": {
+    "lat": 40.337197324418,
+    "lon": -111.758962279073
+  },
+  "231 N University Ave Provo, UT 84601": {
+    "lat": 40.236868290341,
+    "lon": -111.659037839463
+  },
+  "26 S Rio Grande St #2072, Salt Lake City, UT 84101": {
+    "lat": 40.767987124048,
+    "lon": -111.904471447647
+  },
+  "6510 Millrock Dr STE 300, Holladay, UT 84121": {
+    "lat": 40.633177580607,
+    "lon": -111.801268175152
+  },
+  "2578 W 600 N, Lindon, UT 84042": {
+    "lat": 40.349888699292,
+    "lon": -111.771130204094
+  },
+  "1250 e 200 s Lehi Utah 84043": {
+    "lat": 40.38513766154,
+    "lon": -111.830603411342
+  },
+  "2174 S Main Street, Salt Lake City, UT 84115": {
+    "lat": 40.724081122654,
+    "lon": -111.891329713115
+  },
+  "192 N Fort Ln, Layton, UT 84041": {
+    "lat": 41.06269458824,
+    "lon": -111.957325046862
+  },
+  "250 E 200 S Salt Lake City UT 84111": {
+    "lat": 40.764721869847,
+    "lon": -111.884409613854
+  },
+  "4652 S 1025 E, Ogden, UTAH, 84403": {
+    "lat": 41.178512373557,
+    "lon": -111.954095918664
+  },
+  "None": {
+    "lat": 24.8184952,
+    "lon": 93.5984615
+  },
+  "123 W 4500 S, Sandy, UT 84070": {
+    "lat": 40.576488,
+    "lon": -111.885745
+  },
+  "123 W 4500 S, Murray, UT 84070": {
+    "lat": 40.674175331986,
+    "lon": -111.8946335429
+  }
+}
