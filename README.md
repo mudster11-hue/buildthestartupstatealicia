@@ -1,209 +1,88 @@
-# Utah Startup Hub
+# Build the Startup State
 
-A demo-ready Streamlit web app that connects Utah entrepreneurs with grants/resources and investors with startups — all on an interactive map.
+**A platform that connects Utah founders with funding and investors with the next great company.**
+
+Built for the Utah AI Builder Day bounty — and for my husband, who wants to start a business and kept hitting walls trying to find out how.
+
+---
+
+## The Problem
+
+Utah has world-class resources for founders. Grants, programs, funding, support — it's all there. But for a first-generation entrepreneur, a working family, someone without a connection or a lawyer, it is nearly impossible to find. The government websites are a maze. The opportunity feels real but out of reach.
+
+That's not just a UX problem. It's a trust problem. When people can't find the help that exists, they stop believing the help exists.
+
+This platform was built to solve that — to be the front door that actually opens.
 
 ---
 
 ## What It Does
 
-| Role | Features |
-|---|---|
-| **Entrepreneur** | Guided grant-finder quiz (≤6 questions), filtered resource cards, save favourites, startup profile builder, opt-in investor map pin, real-time messaging |
-| **Investor** | Interactive Utah heat map (color = stage, size = employees), hover & click popups, save startups, direct messaging |
+**For Entrepreneurs**
+- Cinematic landing page that immediately feels welcoming, not bureaucratic
+- A guided grant finder quiz (under 2 minutes) that asks about your business and surfaces exactly what's available to you
+- Browse and save from 500+ Utah grants and resources
+- Build a startup profile so investors can find you
+- Direct messaging with investors
+
+**For Investors**
+- Live interactive map of Utah startups, filterable by industry and stage
+- Click any startup to see their profile, description, and website
+- Save companies worth a second look
+- Direct messaging with founders
 
 ---
 
-## Quick Start
+## The Story
 
-### 1 — Clone / open the folder
+My husband dreams of owning a business. We bought a house in Utah — stretched ourselves to do it — because we kept hearing about the Silicon Slopes, the innovation, the opportunity. When we tried to actually access any of it, we hit a wall. We felt what a lot of Utah residents feel: that this world wasn't built for people like us.
 
-```
-C:\Users\mudst\startup_hub\
-```
+When I saw this bounty I didn't see the $10,000. I saw someone at the state level who was having the same conversation we were having at our dinner table every night. I built this because it's a problem my heart is in — and because when I found those spreadsheets full of resources I didn't know existed, I realized solving this wasn't just for Utah. It was for my family.
 
-### 2 — Create a virtual environment (recommended)
+---
 
-```powershell
-cd C:\Users\mudst\startup_hub
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-### 3 — Install dependencies
+## Running Locally
 
 ```powershell
 pip install -r requirements.txt
+python -m streamlit run app.py
 ```
 
-### 4 — Run the app
-
-```powershell
-streamlit run app.py
-```
-
-The app opens at **http://localhost:8501** in your browser.
-
-> **Demo mode:** No login needed. Click "I'm an Entrepreneur" or "I'm an Investor" on the landing page.
+Opens at **http://localhost:8501** — no account needed. Choose Entrepreneur or Investor on the landing page.
 
 ---
 
-## Folder Structure
+## How the Data Works
 
-```
-startup_hub/
-│
-├── app.py                  ← Main entry point (router + nav)
-├── requirements.txt
-├── README.md
-│
-├── .streamlit/
-│   └── config.toml         ← Theme colours
-│
-├── config/
-│   └── settings.py         ← All constants: URLs, stages, colours, demo users
-│
-├── data/
-│   ├── raw/                ← Downloaded CSV files (auto-created)
-│   ├── cache/              ← JSON cache (resources, map, geocode, sample startups)
-│   ├── profiles/           ← One JSON file per entrepreneur profile
-│   ├── saved/              ← Saved grants (per entrepreneur) + saved startups (per investor)
-│   └── messages/           ← One JSON file per conversation thread
-│
-├── modules/                ← Business logic (no Streamlit UI here)
-│   ├── auth.py             ← Demo session management
-│   ├── data_loader.py      ← Google Sheets → JSON cache
-│   ├── geocoder.py         ← Address → lat/lon via geopy ArcGIS (free)
-│   ├── questionnaire.py    ← Builds questions from the resource data columns
-│   ├── resource_filter.py  ← Filters resources based on questionnaire answers
-│   ├── profile_manager.py  ← Save/load entrepreneur profiles + logo encoding
-│   └── messaging.py        ← Thread-based messaging (JSON files)
-│
-├── scripts/
-│   └── refresh_data.py     ← CLI: force-refresh the Google Sheets cache
-│
-└── views/                  ← Streamlit UI pages
-    ├── landing.py          ← Role selector
-    ├── entrepreneur/
-    │   ├── dashboard.py    ← Home with stats + quick actions
-    │   ├── quiz.py         ← Step-by-step grant finder
-    │   ├── resources.py    ← Resource cards with save toggle
-    │   ├── profile.py      ← Profile form + map opt-in
-    │   └── messages.py     ← Inbox (receives messages from investors)
-    └── investor/
-        ├── map_view.py     ← Folium heat map of Utah startups
-        ├── dashboard.py    ← Saved startups list
-        └── messages.py     ← Send & manage messages to founders
-```
+Resources and grants pull live from a Google Sheet — a state employee can add or update a resource with no code, and it appears on the platform within 60 minutes. The startup map pulls from a second sheet and geocodes addresses automatically.
 
----
-
-## Data Sources
-
-| Source | URL | Cached at |
-|---|---|---|
-| Resources / Grants | `RESOURCES_URL` in `config/settings.py` | `data/cache/resources.json` |
-| Startup Map (read-only) | `MAP_URL` in `config/settings.py` | `data/cache/map_data.json` |
-| Demo startups | bundled | `data/cache/sample_startups.json` |
-| Geocode results | geopy ArcGIS | `data/cache/geocode_cache.json` |
-
-The cache refreshes automatically when it is older than **60 minutes** (configurable via `CACHE_TTL_MINUTES` in `config/settings.py`). The app always serves from the cache immediately so load times stay fast.
-
-### Manual refresh
-
-```powershell
-python scripts/refresh_data.py          # refresh both sheets
-python scripts/refresh_data.py --geocode  # also fill in missing lat/lon
-```
-
----
-
-## Address Format
-
-For geocoding to work correctly, enter addresses in Utah's Plat System format:
-
-```
-123 W 4500 S, Sandy, UT 84070
-67 W 13490 S, Draper, UT 84020
-850 W 200 S, Salt Lake City, UT 84101
-```
-
-> **Why this format?** The ArcGIS geocoder understands Utah's grid system when the address uses this pattern: `[number] [direction] [street number] [direction], [City], UT [zip]`
-
----
-
-## Investor Map
-
-The heat map merges three sources:
-
-1. **Demo startups** — 12 pre-seeded Utah companies with pre-calculated lat/lon (loads instantly).
-2. **Entrepreneur profiles** — any entrepreneur who toggled "Open my profile to investors" in their profile.
-3. **Google Sheets map data** — the `MAP_URL` sheet (if columns can be detected).
-
-**Colour = Stage:**
-| Colour | Stage |
+| Source | Updated |
 |---|---|
-| 🟣 Purple | Pre-Seed |
-| 🔵 Blue | Seed |
-| 🟢 Green | Early |
-| 🟠 Orange | Growth |
-| 🔴 Red | Maturity |
-
-**Dot size = Number of Employees** (larger = more employees)
-
----
-
-## Geocoding Note
-
-This app uses **geopy's ArcGIS backend** — it calls ArcGIS's *free public endpoint* with no API key required. It is rate-limited to ~1 request/second and caches every result locally so each unique address is only looked up once.
-
-If you later need higher throughput or SLA guarantees you can swap in the full ArcGIS API by replacing the `ArcGIS()` call in `modules/geocoder.py` with:
-
-```python
-from geopy.geocoders import ArcGIS
-_geolocator = ArcGIS(username="YOUR_USER", password="YOUR_PASS", referer="YOUR_APP")
-```
-
----
-
-## Configuration
-
-All constants live in `config/settings.py`. Things you may want to change:
-
-| Setting | Purpose |
-|---|---|
-| `RESOURCES_URL` | Google Sheets export URL for grants/resources |
-| `MAP_URL` | Google Sheets export URL for existing startup map data |
-| `CACHE_TTL_MINUTES` | How often to check for sheet updates (default 60) |
-| `DEMO_USERS` | Names/emails shown in demo mode |
-| `STAGE_OPTIONS` | Stage labels and descriptions |
-| `BUSINESS_TYPES` | Business type labels and descriptions |
-| `STAGE_COLORS` | Map dot colours per stage |
-| `EMPLOYEE_RADIUS` | Map dot radius per employee band |
-
----
-
-## Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| Map shows blank | Check internet; the first load geocodes addresses (takes a few seconds). Demo startups should always show. |
-| "Could not load resources" | The Google Sheet may be private. Make sure the share link is set to "Anyone with the link can view". |
-| Geocoding returns None | Verify address format (see above). Run `python scripts/refresh_data.py --geocode` after fixing addresses. |
-| App won't start | Run `pip install -r requirements.txt` and make sure Python ≥ 3.10 |
+| Grants & Resources | Google Sheets, cached every 60 min |
+| Startup Map | Google Sheets, geocoded via ArcGIS |
+| Entrepreneur Profiles | Stored locally per user |
 
 ---
 
 ## Tech Stack
 
-| Library | Purpose |
+| | |
 |---|---|
-| `streamlit` | Web UI framework |
-| `pandas` | Data loading & manipulation |
-| `folium` + `streamlit-folium` | Interactive Leaflet map |
-| `geopy` | Address geocoding (ArcGIS backend) |
-| `Pillow` | Logo image resizing & base64 encoding |
-| `requests` | Fetching Google Sheets CSV exports |
+| **Framework** | Streamlit |
+| **Map** | Folium + Pydeck |
+| **Geocoding** | geopy (ArcGIS, no API key required) |
+| **Data** | Google Sheets → JSON cache |
+| **Language** | Python 3.10+ |
 
 ---
 
-*Built for demo purposes. All data stored locally in the `data/` directory.*
+## What's Next
+
+- Real user accounts and persistent sessions
+- Mobile optimization
+- Connection to official state data sources
+- Investor-founder matching
+
+---
+
+*Built in Utah. For Utah. By someone who bet on this state and needed a reason to believe the bet was right.*
